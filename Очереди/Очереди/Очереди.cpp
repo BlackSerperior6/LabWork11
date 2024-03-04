@@ -234,13 +234,13 @@ int main()
 
         if (OutputStream.is_open())
         {
-            cout << "Записываем список в файл" << endl;
+            cout << "Записываем очередь в файл" << endl;
             queue->Write_Into_File(&OutputStream);
             OutputStream.close();
             int Length = queue->size;
             queue->Clear();
 
-            cout << "Очищаем список и считываем его из файла" << endl << endl;
+            cout << "Очищаем очердь и считываем ёё из файла" << endl << endl;
 
             ifstream InputStream("F1.bin", ios::binary);
 
